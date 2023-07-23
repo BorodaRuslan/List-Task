@@ -5,22 +5,22 @@ public class Task_2 {
     public static List<String> fruitList = new ArrayList<>();
 
     public static void main(String[] args) {
-        addFruit("orange");
-        addFruit("mango");
-        addFruit("banana");
-        addFruit("apple");
-        addFruit("kiwi");
-        addFruit("kiwi");
-        addFruit("cherry");
 
+        addFruit();
         System.out.println("Initial list:");
         printFruitList(fruitList);
         System.out.println("List part:");
         printFruitList(subList(fruitList, 1, 2));
 
     }
-    public static void addFruit(String fruit){
-        fruitList.add(fruit);
+    public static void addFruit(){
+        fruitList.add("orange");
+        fruitList.add("mango");
+        fruitList.add("banana");
+        fruitList.add("apple");
+        fruitList.add("kiwi");
+        fruitList.add("cherry");
+
     }
     public static void printFruitList(List<String> fruitList){
         int count = 1;

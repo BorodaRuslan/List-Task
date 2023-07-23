@@ -5,13 +5,7 @@ public class Task_1 {
    public static List<String> nameList = new ArrayList<>();
 
     public static void main(String[] args) {
-        addNameList("John");
-        addNameList("Alice");
-        addNameList("Robert");
-        addNameList("Lisa");
-        addNameList("David");
-        addNameList("Amanda");
-
+        addNameList();
         System.out.println("Initial list:");
         printList(nameList);
         System.out.println("Sorted list:");
@@ -28,7 +22,12 @@ public class Task_1 {
             count++;
         }
     }
-    public static void addNameList(String name){
-        nameList.add(name);
+    public static void addNameList(){
+        nameList.add("John");
+        nameList.add("Alice");
+        nameList.add("Robert");
+        nameList.add("Lisa");
+        nameList.add("David");
+        nameList.add("Amanda");
     }
 }
